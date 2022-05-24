@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;900&display=swap');
+
+*{
+  font-family: 'Poppins', sans-serif;
+  margin:0; padding:0;
+  box-sizing: border-box;
+  outline: none; border:none;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: all .2s linear;
+}
+
+body,
+html{
+  background-color: aliceblue;
+  overflow-x: hidden;
+}
+
+#nav-toggler{
+  -webkit-appearance: none;
+  position: fixed;
+  top:20px; right:30px;
+  cursor: pointer;
+  z-index: 1010;
+  font-size: 3rem;
+}
+
+#nav-toggler:checked{
+  transform: rotate(180deg);
+}
+
+#nav-toggler:checked::before{
+  content: '\f00d';
+  color:#fff;
+  transition: .2s linear .2s;
+}
+
+#nav-toggler:checked ~ .navbar{
+  left:0;
+}
+
+.navbar{
+  position: fixed;
+  top:0; left:-110%;
+  height: 100%;
+  width: 100%;
+  z-index: 1000;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-flow: column;
+  padding:0 10%;
+}
+
+.navbar a{
+  font-size: 4em;
+  color:transparent;
+  -webkit-text-stroke: .5px rgba(255,255,255,.5);
+  font-weight: bolder;
+  position: relative;
+  letter-spacing: 3px;
+}
+
+.navbar a::before{
+  content: attr(data-text);
+  position: absolute;
+  top:0; left:0;
+  color:rgba(255,255,255,.9);
+  transition: .3s linear;
+  clip-path: polygon(30% 80%, 0 0, 0 100%, 0% 100%);
+}
+
+.navbar a:hover::before{
+  clip-path: polygon(0 0, 100% 0, 99% 100%, 0 100%);
+}
+
+.background-image{
+  position: absolute;
+  top:0; left:0;
+  height: 100%;
+  width: 100%;
+background-color: rgb(15, 26, 97);
+  z-index: -1;
+}
+
+.navbar a:hover:nth-child(2) ~ .background-image{
+  background-color: black;
+}
+
+.navbar a:hover:nth-child(3) ~ .background-image{
+  background-color: rgb(37, 14, 14);
+}
+
+.navbar a:hover:nth-child(4) ~ .background-image{
+background-color: rgb(47, 29, 125);
+}
+
+.navbar a:hover:nth-child(5) ~ .background-image{
+  background-color: rgb(20, 62, 48);
+}
+
+
+@media (max-width:768px){
+  .navbar a{
+    font-size: 3em;
+  }
+}
+
+@media (max-width:450px){
+  .navbar a{
+    font-size: 2em;
+  }
+}

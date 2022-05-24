@@ -1,0 +1,950 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" type="text/css" href="https://www.fontstatic.com/f=thuluth-decorated" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <script
+        src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js?lang=css&amp;skin=sons-of-obsidian"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="first ">
+        <h3>بسم الله الرحمن الرحيم </h3>
+    </div>
+    <header>
+        <a href="#" class="logo " > 
+            <span> pure css</span> 
+        </a>
+        <nav class="navig">
+            <!-- <a href="#services" class="box">Services</a> -->
+            <a href="#projects" class="box">Projects</a>
+            <a href="#contact" class="box">contact</a>
+        </nav>
+    </header>
+    <section class="zero">
+        <div class="best ">
+
+            <div class="center">
+                <div class="outer circle">
+                    <button>pure css</button>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+            
+        </div>
+        <div class="social">
+            
+            <div class="facebook">
+                <a href="https://web.facebook.com/khaled.boukhalfa.31/"><i class="fa-brands fa-facebook-square"></i></a>
+            </div>
+            <div class="instagram">
+                <a href="https://web.facebook.com/khaled.boukhalfa.31/"><i class="fa-brands fa-instagram-square"></i></a>
+            </div>
+            <div class="telgram">
+                <a href="https://web.facebook.com/khaled.boukhalfa.31/"><i class="fa-solid fa-paper-plane"></i></a>
+            </div>
+            <div class="gmail">
+                <a href="https://web.facebook.com/khaled.boukhalfa.31/"><i class="fa-solid fa-envelope"></i></a>
+            </div>
+
+        </div>
+       <div class="css">
+       
+            <pre ><code>
+ <span class="on"> #JUST CSS</span>{
+     
+ <span class="onee">Name</span> : <span class="twoe">Boukhalfa</span>  ;
+
+ <span class="onee">Prename</span> : <span class="twoet">khaled Islam</span>  ;
+
+ <span class="onee">Jobe</span> : <span class="twoe">Web Developer</span>  ;
+
+ <span class="onee">level</span> : <span class="twoet">Beginner</span>  ;<p class="line anim-typewriter"><span class="onee">subject</span>:inspiration in css;  } </p> 
+            </pre></code>
+          
+        </div>
+        
+      
+    </section>
+    
+
+
+
+
+
+
+
+
+
+
+
+    <!-- firstslide html -->
+<section class="fistslide" id="projects">
+    <div class="one" data-aos="fade-right" data-aos-duration="1800">
+
+        <div class="btn-box continer"><a href="#" class="btn btn1">Button</a> </div>
+
+        <div class="btn-box continer"><a href="#" class="btn btn2">Button</a></div>
+
+        <div class="btn-box continer"><a href="#" class="btn btn3">Button</a></div>
+
+        <div class="btn-box continer"><a href="#" class="btn btn4">Button</a></div>
+
+
+
+
+
+    </div>
+    <div class="two" data-aos="fade-left" data-aos-duration="1800">
+        <div class="titl">
+            <h1> BUTTON EFFECT </h1>
+        </div>
+        <div class="htmlcode">
+            <div class="code">
+                <?prettify linenums=30?>
+                <pre class="prettyprint">
+  <xmp> <HTML> 
+ <body>
+    <div class="hover effect">
+        <div class="btn-box">
+            <a href="#" class="btn btn1">Button</a>
+            <a href="#" class="btn btn2">Button</a>
+            <a href="#" class="btn btn3">Button</a>
+            <a href="#" class="btn btn4">Button</a>
+        </div>
+    </div>
+
+</body></xmp>
+    </pre>
+            </div>
+        </div>
+
+    </div>
+    <div class="three" data-aos="fade-left" data-aos-duration="1800">
+        <div class="titl">
+            <h1>CSS code </h1>
+        </div>
+        <?prettify linenums=5?>
+        <pre class="prettyprint">
+
+
+    .btn-box{
+    text-align: center;
+    margin-top: 40vh;
+    }
+    body{
+    background-color: rgb(41, 34, 34);
+    }
+    a{
+    text-decoration: none;
+    }
+    .btn{
+    position: relative;
+    font-size: 70px;
+    color: #fff;
+    padding: 5px 12px;
+    border-radius: 5px;
+    border: 3px solid #fff;
+    z-index: 1;
+    transition: color 0.8s;
+    }
+    .btn:hover{
+    color: #000;
+    }
+    .btn::after{
+    content: "";
+    position: absolute;
+    
+    background-color: #fff;
+    z-index: -1;
+    transition: 0.5s;
+    
+    }
+    .btn1::after{
+    width: 0;
+    height: 100%;
+    left: 0;
+    top: 0;
+    }
+    .btn1:hover::after{
+    width: 100%;
+    }
+    .btn2::after{
+    width: 0;
+    height: 100%;
+    right: 0;
+    top: 0;
+    }
+    .btn2:hover::after{
+    width: 100%;
+    }
+    .btn3::after{
+    width: 100%;
+    height: 0;
+    right: 0;
+    top: 0;
+    }
+    .btn3:hover::after{
+    height: 100%;
+    }
+    .btn4::after{
+    width: 100%;
+    height: 0;
+    right: 0;
+    bottom: 0;
+    }
+    .btn4:hover::after{
+    height: 100%;
+    }
+    </pre>
+    </div>
+
+</section>
+    
+
+
+
+
+
+
+
+
+
+<!-- secendpage html -->
+<section class="secendpage">
+    <div class="one" data-aos="flip-up" data-aos-duration="1200"  data-aos-once="false">
+
+        <h2><span>I</span><span>M</span><span>POSSIBLE</span></h2>
+
+
+
+
+    </div>
+
+
+
+    <div class="two" data-aos="fade-left" data-aos-duration="1500">
+        <div class="titl">
+            <h1> Glowing Text </h1>
+        </div>
+        <div class="htmlcode">
+            <div class="code">
+                <?prettify linenums=30?>
+                <pre class="prettyprint">
+  <xmp> 
+<html>
+    <body> 
+    <div class="one">        
+        <h2><span>I</span>
+            <span>M</span>
+            <span>POSSIBLE</span>
+        </h2>
+    </div>
+</body>
+</html> </xmp></pre>
+            </div>
+        </div>
+
+    </div>
+    <div class="three" data-aos="fade-left" data-aos-duration="1500">
+        <div class="titl">
+            <h1>CSS code </h1>
+        </div>
+        <?prettify linenums=5?>
+        <pre class="prettyprint">
+  {
+background-color: rgb(0, 0, 0);
+border: 6px solid bisque;
+grid-row: 1 / 3;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+  h2{
+color: #222;
+font-size: 4.5em;
+letter-spacing: 5px;
+cursor: pointer;
+
+}
+  h2 span{
+transition: 1s;
+}
+  h2:hover span:nth-child(1){
+margin-right: 10px;
+}
+  h2:hover span:nth-child(1)::after
+{
+content: "'";
+
+}
+ h2:hover span:nth-child(2){
+margin-right: 30px;
+}
+//hover effect with shadow
+ h2:hover{
+color: #fff;
+text-shadow:
+0 0 10px #fff,
+0 0 20px #fff,
+0 0 40px #fff,
+0 0 80px #fff
+;
+}
+
+    
+    </pre>
+    </div>
+
+</section>
+
+
+
+
+
+
+
+
+
+<!-- slide 3 html -->
+<section class="slideee">
+    <div class="one" data-aos="slide-right" data-aos-duration="2000">
+
+
+        <div class="center">
+            <a href="#"><span></span><span></span>Click Here</a>
+        </div>
+
+    </div>
+    <div class="two" data-aos="slide-left" data-aos-duration="2000" >
+        <div class="titl">
+            <h1> 3D BUTTON EFFECT </h1>
+        </div>
+        <div class="htmlcode">
+            <div class="code">
+                <?prettify linenums=30?>
+                <pre class="prettyprint">
+  <xmp> <HTML> 
+ <body>
+    
+        <div class="center">
+            <a href="#"><span></span><span></span>Click Here</a>
+        </div>
+
+</body></xmp>
+    </pre>
+            </div>
+        </div>
+
+    </div>
+    <div class="three" data-aos="slide-left" data-aos-duration="2000">
+        <div class="titl">
+            <h1>CSS code </h1>
+        </div>
+        <?prettify linenums=5?>
+        <pre class="prettyprint">
+
+.center{
+position: absolute;
+top:50%;
+left: 50%;
+transform: translate(-100% , -50%);
+}
+.center a{
+display: inherit ;
+width: 300px;
+height: 150px;
+color:#262626 ;
+font-size: 50px;
+background-color: transparent;
+text-align: center;
+line-height: 150px;
+text-decoration: none;
+text-transform: uppercase;
+border: 4px solid #262626;
+transition: 0.5s;
+transform: skew(15deg);
+
+}
+.center a:hover{
+background-color: rgba(97, 156, 255, 1);
+color: #fff;
+}
+span:nth-child(1)
+{
+position: absolute;
+width: 30px;
+height: 100% ;
+border:4px solid #262626 ;
+background: #efefef;
+top: 12px;
+left: -38px;
+transform: skewY(-45deg);
+}
+span:nth-child(2)
+{
+position: absolute;
+width: 100%;
+height: 30px ;
+border:4px solid #262626 ;
+background: #efefef;
+bottom: -38px;
+right: 12px;
+transform: skewX(-45deg);
+box-shadow: 0 80px 40px rgba(0, 0, 0, 0.2);
+}
+                
+    </pre>
+    </div>
+
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- fourslide html -->
+<section class="fourslide">
+    <div class="one" data-aos="slide-up" data-aos-duration="1500">
+
+        <ul class="nav">
+            <li class="nav-items">
+                <a href="#" class="nav-link">HOME</a>
+            </li>
+            <li class="nav-items">
+                <a href="#" class="nav-link">about</a>
+            </li>
+            <li class="nav-items">
+                <a href="#" class="nav-link">sevices</a>
+            </li>
+            <li class="nav-items">
+                <a href="#" class="nav-link">conatact
+
+                </a>
+            </li>
+        </ul>
+
+
+
+
+    </div>
+    <div class="two" data-aos="slide-right" data-aos-duration="1500" >
+        <div class="titl">
+            <h1> NAVBAR EFFECT </h1>
+        </div>
+        <div class="htmlcode">
+            <div class="code">
+                <?prettify linenums=30?>
+                <pre class="prettyprint">
+  <xmp> <HTML> 
+<body>
+    <ul class="nav">
+        <li class="nav-items"><a href="#" class="nav-link">HOME</a></li>
+        <li class="nav-items"> <a href="#" class="nav-link">about</a></li>
+        <li class="nav-items"><a href="#" class="nav-link">sevices</a></li>
+        <li class="nav-items"><a href="#" class="nav-link">conatact</a></li>
+    </ul>
+</body>
+
+</xmp>
+    </pre>
+            </div>
+        </div>
+
+    </div>
+    <div class="three" data-aos="slide-left" data-aos-duration="1500">
+        <div class="titl">
+            <h1>CSS code </h1>
+        </div>
+        <?prettify linenums=5?>
+        <pre class="prettyprint">
+
+
+    * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Courier New', Courier, monospace;
+    }
+    
+    body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #d5e0ff;
+    
+    }
+    
+    .nav {
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    
+    }
+    
+    .nav-items {
+    margin: 0 15px;
+    
+    }
+    .nav-link{
+    display: flex;
+    font-weight: 500;
+    font-size: 30px;
+    color: #666;
+    position: relative;
+    padding: 5px 0;
+    overflow: hidden;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: 0.3s;
+    }
+    .nav-link::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 100%;
+    width: 50%;
+    height: 2px;
+    background-color: black;
+    transition: 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+    
+    }
+    .nav-link::after{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 100%;
+    width: 50%;
+    height: 2px;
+    background-color: black;
+    transition: 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+    
+    }
+    
+    .nav-link:hover{
+    color: black;
+    
+    }
+    .nav-link:hover::before
+    {
+    right: 0;
+    }
+    .nav-link:hover::after
+    {
+    left: 0;
+    }
+    </pre>
+    </div>
+
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- fiveslide style -->
+<section class="fiveslide">
+    <div class="one" data-aos="slide-left" data-aos-duration="1500">
+
+        <div class="fullnav"></div> <iframe src="full screen navbar/index.html" frameborder="2" width="600" height="550"></iframe>
+
+
+
+
+    </div>
+    <div class="two" data-aos="slide-right" data-aos-duration="1500">
+        <div class="titl">
+            <h1> FULL SCREEN NAVBAR </h1>
+        </div>
+        <div class="htmlcode">
+            <div class="code">
+                <?prettify linenums=30?>
+                <pre class="prettyprint">
+<xmp> <HTML> 
+<!-- font awesome cdn link  -->
+<link rel="stylesheet" 
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+<!-- custom css file link  -->
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<input type="checkbox" name="" id="nav-toggler" class="fas fa-bars">
+<nav class="navbar">
+    <a href="#" data-text="home">home</a>
+    <a href="#" data-text="about">about</a>
+    <a href="#" data-text="services">services</a>
+    <a href="#" data-text="blogs">blogs</a>
+    <a href="#" data-text="contact">contact</a>
+    <div class="background-image"></div>
+</nav>
+</body>
+</xmp>
+    </pre>
+            </div>
+        </div>
+
+    </div>
+    <div class="three" data-aos="slide-right" data-aos-duration="1500">
+        <div class="titl">
+            <h1>CSS code </h1>
+        </div>
+        <?prettify linenums=5?>
+        <pre class="prettyprint">
+
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;900&display=swap');
+
+*{
+font-family: 'Poppins', sans-serif;
+margin:0; padding:0;
+box-sizing: border-box;
+outline: none; border:none;
+text-decoration: none;
+text-transform: uppercase;
+transition: all .2s linear;
+}
+
+body,
+html{
+background-color: aliceblue;
+overflow-x: hidden;
+}
+
+#nav-toggler{
+-webkit-appearance: none;
+position: fixed;
+top:20px; right:30px;
+cursor: pointer;
+z-index: 1010;
+font-size: 3rem;
+}
+
+#nav-toggler:checked{
+transform: rotate(180deg);
+}
+
+#nav-toggler:checked::before{
+content: '\f00d';
+color:#fff;
+transition: .2s linear .2s;
+}
+
+#nav-toggler:checked ~ .navbar{
+left:0;
+}
+
+.navbar{
+position: fixed;
+top:0; left:-110%;
+height: 100%;
+width: 100%;
+z-index: 1000;
+display: flex;
+align-items: flex-start;
+justify-content: center;
+flex-flow: column;
+padding:0 10%;
+}
+
+.navbar a{
+font-size: 4em;
+color:transparent;
+-webkit-text-stroke: .5px rgba(255,255,255,.5);
+font-weight: bolder;
+position: relative;
+letter-spacing: 3px;
+}
+
+.navbar a::before{
+content: attr(data-text);
+position: absolute;
+top:0; left:0;
+color:rgba(255,255,255,.9);
+transition: .3s linear;
+clip-path: polygon(30% 80%, 0 0, 0 100%, 0% 100%);
+}
+
+.navbar a:hover::before{
+clip-path: polygon(0 0, 100% 0, 99% 100%, 0 100%);
+}
+
+.background-image{
+position: absolute;
+top:0; left:0;
+height: 100%;
+width: 100%;
+background-color: rgb(15, 26, 97);
+z-index: -1;
+}
+
+.navbar a:hover:nth-child(2) ~ .background-image{
+background-color: black;
+}
+
+.navbar a:hover:nth-child(3) ~ .background-image{
+background-color: rgb(37, 14, 14);
+}
+
+.navbar a:hover:nth-child(4) ~ .background-image{
+background-color: rgb(47, 29, 125);
+}
+
+.navbar a:hover:nth-child(5) ~ .background-image{
+background-color: rgb(20, 62, 48);
+}
+
+
+@media (max-width:768px){
+.navbar a{
+font-size: 3em;
+}
+}
+
+@media (max-width:450px){
+.navbar a{
+font-size: 2em;
+}
+}
+    </pre>
+    </div>
+
+</section>
+
+
+
+
+
+<!-- sixslide html -->
+<section class="sixslide">
+    <div class="one" data-aos="fade-right" data-aos-duration="1500">
+
+        <a href="#">button</a>
+        <a href="#">button</a>
+        <a href="#">button</a>
+        <!-- <a href="#">button</a>-->
+        <a href="#">button</a> 
+
+
+    </div>
+
+
+
+    <div class="two" data-aos="fade-left" data-aos-duration="1500">
+        <div class="titl">
+            <h1> Neon Light Button </h1>
+        </div>
+        <div class="htmlcode">
+            <div class="code">
+                <?prettify linenums=30?>
+                <pre class="prettyprint">
+  <xmp> 
+<html>
+    <body> 
+    <a href="#">button</a>
+    <a href="#">button</a>
+    <a href="#">button</a>
+    <a href="#">button</a>
+    
+
+</body>
+</html> </xmp></pre>
+            </div>
+        </div>
+
+    </div>
+    <div class="three" data-aos="slide-left" data-aos-duration="1500">
+        <div class="titl">
+            <h1>CSS code </h1>
+        </div>
+        <?prettify linenums=5?>
+        <pre class="prettyprint">
+
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-family: 'Poppins' , sans-serif;
+}
+body{
+display: flex;
+justify-content: center;
+align-items: center;
+min-height: 100vh;
+background-color: #000;
+}
+
+a{
+position: relative;
+padding: 10px 30px;
+margin: 0 15px ;
+color: #21ebff;
+text-transform: uppercase;
+letter-spacing: 2px;
+font-size: 20px;
+transition: 0.5s;
+overflow: hidden;
+
+}
+
+a:hover{
+color: #111;
+background-color: #21ebff;
+box-shadow: 0 0 50px #21ebff;
+transition-delay: 0.5s;
+}
+
+
+
+
+
+a:nth-child(1){
+filter: hue-rotate(115deg);
+}
+
+a:nth-child(3){
+filter: hue-rotate(300deg);
+}
+a:nth-child(4) {
+filter: hue-rotate(180deg);
+}
+
+
+
+
+
+
+a::before{
+content: "";
+position: absolute;
+top: 0;
+left: 0;
+width: 10px;
+height: 10px;
+border-top: 2px solid #21ebff;
+border-left: 2px solid #21ebff;
+transition: 0.5s;
+}
+a::after{
+content: "";
+position: absolute;
+bottom: 0;
+right: 0;
+width: 10px;
+height: 10px;
+border-bottom: 2px solid #21ebff;
+border-right: 2px solid #21ebff;
+transition: 0.5s;
+}
+a:hover:before{
+width: 100%;
+height: 100%;
+}
+a:hover::after{
+width: 100%;
+height: 100%;
+}
+
+}
+
+    
+    </pre>
+    </div>
+
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<section class="last" id="contact">
+    <div class="more">
+        <p class="line anim-typewriter"> /*   do you want more !!!!   */</p>
+    </div>
+    <footer>
+        <div class="row">
+            <div class="col">
+                <h3 class="logo">Pure css</h3>
+                <p>This website is for inspiration in css 
+                    ther is no javacsript 
+                    I hope you like my first Project
+                </p>
+            </div>
+
+            <div class="col">
+                <h4>contact me</h4>
+                <div class="social" >
+                <div class="fb">
+                    <a href="https://web.facebook.com/khaled.boukhalfa.31/"><i class="fa-brands fa-facebook-square"></i></a>
+                </div>
+                <div class="istg">
+                    <a href="https://web.facebook.com/khaled.boukhalfa.31/"><i class="fa-brands fa-instagram-square"></i></a>
+                </div>
+                <div class="telg">
+                    <a href="https://web.facebook.com/khaled.boukhalfa.31/"><i class="fa-solid fa-paper-plane"></i></a>
+                </div>
+                <div class="gm">
+                    <a href="https://web.facebook.com/khaled.boukhalfa.31/"><i class="fa-solid fa-envelope"></i></a>
+                </div>
+            </div>
+                <h4>077707770 </h4>
+            </div>
+
+
+        </div>
+    </footer>
+</section>
+
+
+<!-- for some animation -->
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+    AOS.init();
+</script>
+</body>
+</html>
